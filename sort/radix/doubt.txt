@@ -1,0 +1,15 @@
+radix: malloc.c:2401: sysmalloc: Assertion 
+`(old_top == initial_top (av) && old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: 没有那个文件或目录.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 10464] will be killed.
+    
+1， 代码不精简
+2， 目前阶段的代码在最糟糕的情况下仅仅能排序11个数
+3， 如何实现一个桶中存放尽量多的数且不浪费空间
+
