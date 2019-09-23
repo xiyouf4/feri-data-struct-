@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define NUM_LEN 10
+#define NUM_LEN 1000
 
 node_t *create_bucket()
 {
@@ -46,6 +46,43 @@ int *radix_sort(int a[], int len)
     node_t *h = create_bucket(); 
     int li = 0;
     node_t *tmp = h->next;
+    /*int loop = 3;
+    while (loop--) {
+        for (int i = 0; i < len; i++) {                     
+            tmp = h->next;                           
+            if (a[i] >= 0 && a[i] < 10) {            
+                if (loop == 3) {
+                    li = a[i];                           
+                } else if (loop == 2) {
+                    li = 0;
+                } else if (loop == 1) {
+                    li = 0;
+                }
+            } else if (a[i] >= 10 && a[i] < 100) {   
+                if (loop == 3) {
+                    li = a[i]%10;                        
+                } else if (loop == 2) {
+                    li = a[i]/10;
+                } else if (loop == 1) {
+                    li = 0;
+                }
+            } else if (a[i] >= 100 && a[i] < 1000) { 
+                if (loop == 3) {
+                    li = a[i]%10;                        
+                } else if (loop == 2) {
+
+                } else if (loop == 1) {
+                    li = a[i]/100;
+                }
+            }                                        
+            while (li != tmp->value->bucket_num) {   
+                tmp = tmp->next;                     
+            }                                        
+            tmp->value->num[tmp->value->numi] = a[i];
+            tmp->value->numi++;                      
+        }                                            
+        read_clear_bucket(a, h);                     
+    }*/
     for (int i = 0; i < len; i++) {
         tmp = h->next;
         if (a[i] >= 0 && a[i] < 10) {

@@ -1,7 +1,7 @@
 #ifndef RADIX_H
 #define RADIX_H
 
-#define NUM_LEN 10
+#define NUM_LEN 1000
 
 typedef struct value {
     int bucket_num;
