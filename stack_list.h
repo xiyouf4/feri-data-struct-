@@ -8,7 +8,7 @@ typedef PtrNode Stack;
 int IsEmpty(Stack S);
 Stack CreateStack(void);
 void MakeEmpty(Stack S);
-void Push(Stack S);
+void Push(int x, Stack S);
 void pop(Stack S);
 int Top(Stack S);
 
