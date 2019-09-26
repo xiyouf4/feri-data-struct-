@@ -18,5 +18,4 @@ void Pop(Stack S);
 char Top(Stack S);
 void MakeEmpty(Stack S);
 
-
 #endif

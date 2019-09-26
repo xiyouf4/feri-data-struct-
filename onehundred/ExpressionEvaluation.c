@@ -184,7 +184,7 @@ int Do(char *suffixexpreesion)
                 topb = topb-48;
             }                  
             Pop(dummy);
-            printf("topa = %d, topb = %d\n", topa, topb);
+            //printf("topa = %d, topb = %d\n", topa, topb);
             if (suffixexpreesion[i] == '+') {
                 topa = topa + topb;
                 if (topa >= 0 && topa <= 9) {
